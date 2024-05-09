@@ -25,7 +25,6 @@ function teamDetails() {
     if (team.code === selectedTeamCode) {
       const details = `The ${team.name} (${team.code}) plays in ${team.plays}`;
       messageParagraph.innerText = details;
-      break;
     }
   }
 }
