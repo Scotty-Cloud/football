@@ -31,5 +31,3 @@ function teamDetails() {
 
 displayTeamButton.onclick = teamDetails;
 window.onload = init;
-
-// displayTeamButton.onclick = displayTeam;
