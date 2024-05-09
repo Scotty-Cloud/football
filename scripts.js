@@ -7,23 +7,30 @@ const teams = [
 ];
 
 const teamsList = document.getElementById("teamsList");
+const messageParagraph = document.getElementById("messageParagraph");
+const displayTeamButton = document.getElementById("displayTeamButton");
 
 function init() {
-   const displayTeamButton = document.getElementById("displayTeamButton");
-   displayTeamButton.onclick = displayTeam;
-
-    for(const team of teams){
-        const option = document.createElement("option")
-        option.value = team.code;
-        option.innerText = team.name;
-        teamsList.appendChild(option);
-    }
+  for (const team of teams) {
+    const option = document.createElement("option");
+    option.value = team.code;
+    option.innerText = team.name;
+    teamsList.appendChild(option);
+  }
 }
 
-function displayTeam() {
-  console.log(teamsList.value);
-  const messageParagraph = document.getElementById("messageParagraph");
-  messageParagraph.innerText = teamsList.value;
+function teamDetails() {
+  const selectedTeamCode = teamsList.value;
+  for (const team of teams) {
+    if (team.code === selectedTeamCode) {
+      const details = `The ${team.name} (${team.code}) plays in ${team.plays}`;
+      messageParagraph.innerText = details;
+      break;
+    }
   }
+}
 
+displayTeamButton.onclick = teamDetails;
 window.onload = init;
+
+// displayTeamButton.onclick = displayTeam;
