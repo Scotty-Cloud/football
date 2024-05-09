@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,4 +56,80 @@ body {
   #messageParagraph {
     text-align: center;
     color: #4CAF50;
-  }
+  } */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d9e3f1;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  /* background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  background: linear-gradient(145deg, #c3ccd9, #e8f3ff);
+  box-shadow: 20px 20px 60px #b8c1cd, -20px -20px 60px #faffff;
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="button"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #667283;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #7888cd;
+}
+
+#messageParagraph {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* #272d35, #5f7287 */
